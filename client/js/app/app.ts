@@ -1,4 +1,8 @@
-class HelloMessage extends React.Component<string, string> {
+interface MyProperty {
+    name:string;
+}
+
+class HelloMessage extends React.Component<MyProperty, string> {
 
     render() {
         return React.createElement(
@@ -10,4 +14,4 @@ class HelloMessage extends React.Component<string, string> {
     }
 }
 
-ReactDOM.render(React.createElement(HelloMessage, { name: "Jane" }), document.querySelector('#react'););
+ReactDOM.render(React.createElement(HelloMessage, { name: "Jane" }), document.querySelector('#react'));

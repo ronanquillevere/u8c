@@ -14,4 +14,3 @@ var HelloMessage = (function (_super) {
     return HelloMessage;
 }(React.Component));
 ReactDOM.render(React.createElement(HelloMessage, { name: "Jane" }), document.querySelector('#react'));
-;

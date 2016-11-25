@@ -7,8 +7,8 @@ let port = 80;
 // })
 
 app.use(express.static('client'))
-app.use(express.static('/lib','node_modules/react/dist'));
-app.use(express.static('/lib','node_modules/react-dom/dist'));
+app.use('/lib',express.static('node_modules/react/dist'));
+app.use('/lib',express.static('node_modules/react-dom/dist'));
 
 //ahah
 
